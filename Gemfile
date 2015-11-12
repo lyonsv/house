@@ -14,6 +14,8 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+gem "figaro"
 gem 'administrate'
 gem 'devise'
 gem 'haml-rails'
