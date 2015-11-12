@@ -1,0 +1,47 @@
+#personas_section{
+}
+
+.persona{
+  height: 450px;
+  background-size: cover;
+  padding-left: 5px;
+  padding-right: 5px;
+  .persona_overlay{
+    visibility: hidden;
+  }
+  &:hover{
+    filter: grayscale(100%);
+    .persona_overlay{
+      visibility:visible;
+    } 
+  }
+}
+
+.persona_bottom{
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: $dark-grey;
+  h5, p{
+    color: white;
+  }
+}
+
+#cormac {
+  background-image: $cormac-img;
+}
+
+#conor_w {
+  background-image: $cormac-img;
+}
+
+#pat {
+  background-image: $cormac-img;
+}
+
+#conor_s {
+  background-image: $cormac-img;
+}

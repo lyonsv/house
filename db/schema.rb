@@ -11,9 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151112204522) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "groceries", force: :cascade do |t|
+    t.string   "name"
+    t.decimal  "price",      precision: 8, scale: 2
+    t.datetime "created_at",                         null: false
+    t.datetime "updated_at",                         null: false
+  end
+
+  create_table "grocery_lists", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean  "open"
+  end
+
+  create_table "line_items", force: :cascade do |t|
+    t.integer  "quantity"
+    t.integer  "grocery_id"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "grocery_list_id"
+  end
+
+  add_index "line_items", ["grocery_id"], name: "index_line_items_on_grocery_id", using: :btree
+  add_index "line_items", ["grocery_list_id"], name: "index_line_items_on_grocery_list_id", using: :btree
+
+  add_foreign_key "line_items", "groceries"
+  add_foreign_key "line_items", "grocery_lists"
 end

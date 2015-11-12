@@ -1,0 +1,18 @@
+.modal {
+  z-index: 10000;
+}
+
+.modal-backdrop{
+  z-index: 10;
+}
+
+.modal-footer{
+  text-align: center;
+}
+
+.modal-logo{
+  border-left: 5px;
+  border-color: white;
+  border-width: 2px;
+  border-right-style: solid;
+}

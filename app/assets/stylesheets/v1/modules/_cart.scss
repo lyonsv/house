@@ -1,0 +1,12 @@
+.cart{
+  background:whitesmoke;
+  .cart-body{@include pad(1em);min-height:150px;} 
+  td{padding-right:1em;;font-size:.8em;}
+  .subtotal{
+    width: 100%;
+    display:block;
+    @include pad(1em);
+  }
+  #total-cost, p, h3 {display:inline; text-transfom:uppercase;};
+}
+

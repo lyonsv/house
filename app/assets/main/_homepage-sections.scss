@@ -1,0 +1,54 @@
+.homepage-section {
+  text-align: center;
+  background-size: cover;
+  background-position: bottom;
+  p{
+    font-family: $font-secondary;
+  }
+}
+
+#intro-section {
+  background-image: $black-bg-overlay, $feet-img;
+  color: white;
+  text-align: left;
+}
+
+#testimonials {
+  background-image: $black-bg-overlay, $legs-hanging-img;
+  color: white;
+  p{
+    max-width: 700px;
+  }
+}
+
+#coming-soon-section{
+  background-image: $primary-left-right-gradient;
+  & *{
+    color: white;
+  }
+  p{
+    margin: 0px;
+  }
+}
+
+.service-description{
+  text-align: center;
+}
+
+.icon-mac-phone, .icon-van, .icon-hanger {
+  font-size: 100px;
+  &:before {
+    width: inherit;
+    color: $brand-primary;
+  }
+}
+
+#testimonials, #intro-section {
+  height: 100%; 
+}
+
+.homepage-image {
+  max-width: 1200px;
+  position: absolute;
+  right: 0;
+}

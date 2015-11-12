@@ -1,0 +1,54 @@
+.l-form-container {
+  text-align: center;
+}
+
+.modal-body, .l-form{
+  text-align: center;
+  .form-inputs input{
+    width: 100%;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 5px;
+    max-width: 700px;
+  }
+  input[type="checkbox"]{
+    margin-left: -20px;
+  }
+  input.half-width{
+    width: 48%;
+    float: left;
+  }
+}
+
+.date-time-select {
+  width: 10%;
+  display: inline;
+}
+
+#order_delivery_time_1i{
+  width: 15%;
+}
+
+#order_delivery_time_2i{
+  width: 20%;
+}
+
+@media (max-width: 700px) {
+  .date-time-select {
+    width: 14%;
+    display: inline;
+  }
+
+  #order_delivery_time_1i{
+    width: 19%;
+  }
+
+  #order_delivery_time_2i{
+    width: 30%;
+  }
+}
+
+.btn-default[disabled], .btn-default[disabled]:hover{
+  color: #333;
+}

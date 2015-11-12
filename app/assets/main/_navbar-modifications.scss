@@ -1,0 +1,100 @@
+.navbar{
+  transition: all 1s;
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-default{
+  background-image: $nav-gradient;
+  padding-bottom: 5px;
+}
+
+.navbar-inverse{
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #333;
+  &:hover{
+    border-bottom: 4px solid;
+    border-color: $brand-primary;
+  }
+}
+
+.navbar-brand {
+  padding: 6px 6px;
+}
+
+#nav-logo {
+  max-height: 50px;
+}
+
+.svg-text {
+  transition: fill 1s;
+  fill: white;
+}
+
+.affix {
+  .svg-text{
+    fill: #333;
+  }
+
+  &.navbar{
+    transition: all 1s;
+    background-color: white;
+  }
+
+  &.navbar-default .navbar-nav > li > a{
+    color: #333;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  margin-top: 18px;
+  color: white;
+}
+
+.nav .active {
+  border-bottom: 4px solid;
+  border-color: $brand-primary;
+  a{
+    background-color: white;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar-default{
+    padding-bottom: 30px;
+  }
+
+  .navbar.affix-top .navbar-collapse {
+    transition: all 1s;
+    background-color: rgba(0,0,0,0.8);
+  }
+}
+
+.affix-top a:hover, 
+.affix-top a:focus {
+  color: white !important;
+}
+
+.navbar-collapse {
+  border-top: initial;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}

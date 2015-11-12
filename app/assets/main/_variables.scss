@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+
+$font-secondary:'Arvo', serif;
+
+$feet-img: image-url('Feet_Picture.jpg');
+$legs-hanging-img: image-url('Legs_Hanging.jpg');
+$cormac-img: image-url('Cormac.jpg');
+$legs-img: image-url('Legs.jpg');
+$suit-button-img: image-url('Suit_Button.jpg');
+$price-point-img: image-url('Pricepoint.svg');
+
+$dark-grey: #333;
+$brand-primary-dark: rgb(152, 12, 48);
+$brand-primary-light: rgb(200, 14, 61);
+$brand-primary: #CD1F3A;
+$input-border-focus: $brand-primary;
+
+$opaque-black: rgba(0, 0, 0, 0.4);
+$black-bg-overlay: linear-gradient($opaque-black, $opaque-black);
+$primary-left-right-gradient: linear-gradient(to left, $brand-primary-dark, $brand-primary-light);
+$primary-left-right-gradient-light: linear-gradient(to left, lighten($brand-primary-dark, 10%), lighten($brand-primary-light, 10%));
+
+$nav-gradient: linear-gradient(to bottom, rgba(255,255,255,1), 0%, rgba(255,255,255,0), 90%);

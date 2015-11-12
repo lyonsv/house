@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resource :dashboard, only: [:index]
+  resource :line_items
+  root to: "dashboard#index"
   namespace :admin do
     DashboardManifest::DASHBOARDS.each do |dashboard_resource|
       resources dashboard_resource

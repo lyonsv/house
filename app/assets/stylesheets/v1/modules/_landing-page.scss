@@ -1,0 +1,83 @@
+.pricepoint-container {
+  background: asset-url('Pricepoint.svg');
+  background-size: cover;
+  padding-top: 56px;
+  width: 142px;
+  height: 168px;
+  margin: 0 auto;
+  h1{color: $base-font-color;}
+}
+.logo, .sign-in{
+  @include span-columns(3);
+}
+
+.links{
+  @include span-columns(6);
+}
+
+
+.landing-page{
+  .pricepoints-grid-item{
+    @include span-columns(4);
+    @include omega(3n);
+    @include breakpoint(small){
+    @include omega(0);
+    @include span-columns(12);
+    }
+  }
+  .pricepoints-large-container{
+    @include span-columns(12);
+  }
+  .landing-form{
+  .cols-6{margin:0;}
+  .btn-big, select{height:60px;}
+  .btn-big{border-radius:0;width:100%;max-width:200px;}
+  select{
+    -webkit-appearance:none;
+    -webkit-border-radius:0;
+    } 
+  }
+  .iphone-images{
+    margin-top:-100px;
+    margin-bottom:-200px;
+    }
+  nav{
+    .svg-text{fill: $white}
+    li a {color:white;margin-top:10px;}
+    li a:hover{border-bottom:5px solid $accent;padding-bottom:1em;} 
+    ul{padding-top:3px;}
+    font-family: $header-font-family; 
+  }
+  header{
+    text-align:left;
+    h1{font-size:3em; text-transform:uppercase;}
+    h3{
+      font-size:1.2em;
+      font-color: $light-gray;
+      padding:1em 0;
+      margin-bottom:10px;
+    }
+  }
+  .testimonials{
+    background-image: $testimonials-bg-url;   
+    background-size:cover;
+    background-position:bottom;
+  }
+  .hero{
+    background-image: $hero-bg-url;  
+    background-size:cover;
+    background-position:bottom;
+  }
+  
+}
+
+svg{width:100%}
+
+.sign-up-form{
+  @include span-columns(6);
+  @include shift(3);
+  @include breakpoint(small){
+  width:100%;
+  @include shift(0);
+  }
+}

@@ -1,0 +1,9 @@
+.product-grid.m-w-100
+  %h1.p-top.p-bottom.tac= grocery.name
+  .cols-12.product-buttons  
+    = link_to line_items_path(grocery_id: grocery, quantity: -1, groceries_page: true), method: :post, remote: true, class: "cols-6 product-buttons-border-right" do
+      .fa.fa-minus
+    = link_to line_items_path(grocery_id: grocery, quantity: 1, groceries_page: true), method: :post, remote: true, class: "cols-6" do
+      .fa.fa-plus
+
+

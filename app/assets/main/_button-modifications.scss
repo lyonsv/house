@@ -1,0 +1,15 @@
+.btn {
+  background-color: $brand-primary;
+  color: white;
+  border-radius: 0px;
+  margin: 0 10px;
+  width: 150px;
+  &:hover{
+    color: white;
+    background-color: darken($brand-primary, 10%);
+  }
+}
+
+.btn.btn-lg{
+  width: initial;
+}

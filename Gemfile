@@ -8,12 +8,17 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 group :development, :test do
+  gem 'pry-byebug'
   gem 'byebug'
 end
 group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
+gem 'bourbon'
+gem 'neat'
+gem "font-awesome-rails"
 
 gem "figaro"
 gem 'administrate'

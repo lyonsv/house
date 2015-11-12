@@ -1,0 +1,34 @@
+html, body {
+  height: 100%;
+}
+
+.jumbotron{
+  padding-top: 48px;
+  padding-bottom: 48px;
+  p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  max-width: 100px;
+}
+
+::selection {
+  background: $brand-primary;
+}
+
+.col-md-offset-1point5 {
+  @media (min-width: $screen-md-min) {
+    margin-left: 12.5%;
+  }
+  @media (min-width: $screen-lg-min) {
+    margin-left: 12.5%;    
+  }
+}

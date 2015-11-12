@@ -1,0 +1,80 @@
+nav.l-navigation{
+  position:fixed;
+  width:100%;
+  top:0;
+  padding-top:1.3em; 
+  background:$navigation-color;
+  box-sizing: border-box;
+  display:block;
+  
+  .cart-svg{
+    display:inline;
+    width:26px;
+    margin-bottom:-7px;
+    }
+
+  img{
+    max-width:200px;
+    margin-top:13px;
+    }
+
+  .user-settings{
+    @include shift(8);
+    @include span-columns(2);
+    }
+
+  ul{
+    text-align:right;
+    padding-left: 0;
+    margin-right: 1em;
+    }
+
+  li{
+    display:inline;
+    padding:0 1em;
+    @include breakpoint(small){
+      padding:0;
+      }    
+    }
+
+  li a{
+    color:$navigation-link-color;
+      }
+
+  .back{
+    display:inline-block;
+    vertical-align:middle;
+    @include breakpoint(medium){display:none;}  
+    }
+
+  .mobile-menu-2{
+    display:none;
+    @include breakpoint(medium){display:block;}  
+    }
+  .mobile-menu-1{
+    @include breakpoint(medium){display:none;}  
+    }
+
+  img.burger-menu {
+    margin: 1em 0 0 1em;
+    height: 1.5em;
+    width: 1.5em;
+    }
+
+  .dropdown{
+    svg{width:10px;margin-bottom:-2px;}
+    color:$accent;
+  }
+
+  #cart-icon{display:inline;}
+
+  .quantity{
+    background:$accent;
+    color:$white;
+    display:inline;
+    padding:6px 10px;
+    border-radius:1000px;
+    font-size:10px;
+  }
+}
+
