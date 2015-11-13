@@ -6,4 +6,5 @@
   .cols-3
     #grocery_list
       = render "grocery_list"
+    = link_to "Checkout Grocery List", edit_grocery_list_path(GroceryList.last.id), class: "btn-solid btn-sml btn-accent"
 

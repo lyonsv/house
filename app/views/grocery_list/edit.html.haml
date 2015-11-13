@@ -1,0 +1,10 @@
+%h1 Edit Groceries List
+= @groceries_list.inspect
+%ul
+  - @groceries_list_items.each do |i|
+    %li 
+      = i.name
+      = i.quantity
+= simple_form_for(@groceries_list, clasS: "l-form") do |g|
+  = g.input :open
+  = g.submit "Close list and send email", class: "btn-big btn-solid btn-accent"
