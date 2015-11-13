@@ -1,0 +1,6 @@
+%h1 Add A Grocery
+
+= simple_form_for(@grocery) do |f|
+  = f.input :name
+  = f.input :price
+  = f.submit "Create", class: "btn-solid btn-accent btn-huge"
